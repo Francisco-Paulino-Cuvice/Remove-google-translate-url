@@ -3,10 +3,7 @@ Userscript que remove a traducao automatica que o Google aplica no site ao clica
 
 Corrige automaticamente URLs abertas pelo Google que usam o domínio `translate.goog`.
 ## 🚨 Problema
-Ao pesquisar páginas que não estão no seu idioma preferido, o Google pode abrir páginas através de:
-`https://translate.google.com/translate?u=`
-ou
-`*.translate.goog`.
+Ao pesquisar páginas que não estão no seu idioma preferido, o Google pode abrir páginas através de: `https://translate.google.com/translate?u=` ou `*.translate.goog`.
 
 Isso:
 - Altera o domínio original
@@ -23,9 +20,9 @@ Este script:
 ## ⚙️ Como usar
 1. Instale a extensão Tampermonkey no seu navegador
 2. Vá nas opções da extensão e ative a permissão para executar scripts de usuário
-3. Na interface do TamperMonkey, crie um novo userscript
-4. Copie o código desse repositório e cole no userscript
-5. Salve e ative o userscript na outra aba (se necessário)
+3. Abra o script no github e clique em RAW que o TamperMonkey automaticamente redireciona para a instalação
+4. Ou crie um novo userscript, copie o código desse repositório, cole no userscript e salve
+5. Certifique-se de que o script está ativado na aba "Userscripts instalados" na interface do TamperMonkey
 
 ## 💡 Exemplo
 Usando como exemplo uma página da wiki Fandom do jogo Subnautica:
