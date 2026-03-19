@@ -27,9 +27,17 @@ Este script:
 ## 💡 Exemplo
 Usando como exemplo uma página da wiki Fandom do jogo Subnautica:
 
+<img width="1920" height="1032" alt="pesquisa exemplo" src="https://github.com/user-attachments/assets/35c23fe3-691c-4fe1-9600-19493213657a" />
+
+
 ### Abrindo a página sem o script:
 `https://subnautica-fandom-com.translate.goog/wiki/Sea_Dragon_Leviathan?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc`
 
+<img width="1920" height="1032" alt="sem script" src="https://github.com/user-attachments/assets/16bef0b8-0554-44cc-8723-20cff0a1b1ef" />
+
+
 ### Usando o script:
 `https://subnautica.fandom.com/wiki/Sea_Dragon`
+
+<img width="1920" height="1032" alt="depois script" src="https://github.com/user-attachments/assets/06fce036-681b-4bae-be77-bf7ba4870e70" />
 
