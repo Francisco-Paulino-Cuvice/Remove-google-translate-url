@@ -10,19 +10,23 @@
 // @run-at       document-start
 // ==/UserScript==
 
-(function() {
+(function () {
     const url = new URL(window.location.href);
 
-    // pega só a parte antes do .translate.goog
+    // remove .translate.goog
     let encodedHost = url.hostname.replace('.translate.goog', '');
 
-    // reverte: troca - por .
-    let originalHost = encodedHost.replace(/-/g, '.');
+    // 1. -- → -
+    // 2. - → .
+    let originalHost = encodedHost
+        .replace(/--/g, '#TEMP#') // placeholder
+        .replace(/-/g, '.')
+        .replace(/#TEMP#/g, '-');
 
-    // monta URL final
+    // monta URL
     let cleanUrl = url.protocol + '//' + originalHost + url.pathname + url.search + url.hash;
 
-    // remove parâmetros de tradução (_x_tr_*)
+    // remove parâmetros de tradução
     cleanUrl = cleanUrl.replace(/([?&])_x_tr_[^&]+/g, '');
 
     window.location.replace(cleanUrl);
